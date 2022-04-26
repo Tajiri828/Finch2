@@ -43,7 +43,43 @@ def exercise5():
         print('To Bad so Sad you got it Wrong!')
         bird.setTurn('L',70,50)
 
-def exercise6():        
+def exercise6():
+    valueRed = int(input("What is the amount of Red"))
+    valueGreen = int(input("what is the amount of Green"))
+    valueBlue = int(input("What is the amount of Blue"))
+    bird.setBeak(valueRed,valueGreen,valueBlue)
+    bird.setTail('all',valueRed,valueGreen,valueBlue)
+    sleep(3)
+    bird.stopAll()
+
+def exercise7():
+    sideLength = int(input("What is the side length"))
+    bird.setTail(1,100,0,0)
+    bird.setMove('F',sideLength,30)
+    bird.setTurn('R',90,30)
+    bird.setTail(2,0,100,0)
+    bird.setMove('F',sideLength,30)
+    bird.setTurn('R',90,30)
+    bird.setTail(3,0,0,100)
+    bird.setMove('F',sideLength,30)
+    bird.setTurn('R',90,30)
+    bird.setTail(4,50,0,70)
+    bird.setMove('F',sideLength,30)
+    bird.setTurn('R',90,30)
+    bird.stopAll()
+    
+  
+    
+    
+    
+    
+    
+    
+
+
+    
+
+    
     
 
     
@@ -54,6 +90,8 @@ def exercise6():
 #exercise3()
 #exercise4()
 #exercise5()
+#exercise6()
+exercise7()    
         
 
 
